@@ -1,0 +1,9 @@
+(a+b) mod c= (a mod c +b mod c) mod c 
+
+(a-b) mod c = (a mod c - b mod c) mod c
+
+(a*b) mod c = (a mod c * b mod c) mod c
+
+(a^b) mod c = ((a mod c)^b) mod c
+
+if a=b mod c(a and b are congruent) then a= b+ k.c ,, a and b are congruent when we add some no. k to it , where k is some number
