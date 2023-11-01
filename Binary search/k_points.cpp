@@ -1,3 +1,5 @@
+//place K points so that maximum distance bw neighbouring points is minimum
+
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
