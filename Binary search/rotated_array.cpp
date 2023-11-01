@@ -39,6 +39,8 @@
 //     cout << ans << endl;
 // }
 
+
+//to find how many times the array has been rotated
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -52,7 +54,7 @@ int check(int arr[], int x)
 
 void solve()
 {
-    int n; // X is element to be compared or found
+    int n; 
     int arr[100100];
     cin >> n;
     for (int i = 0; i < n; i++)
@@ -61,7 +63,7 @@ void solve()
     }
     int lo = 0;
     int hi = n - 1;
-    int ans = 0;
+    int ans = n;
     while (lo <= hi)
     {
         int mid = (lo + hi) / 2;
@@ -75,7 +77,7 @@ void solve()
             lo = mid + 1;
         }
     }
-    cout << ans << endl;
+    cout << n-ans << endl;
 }
 signed main()
 {
