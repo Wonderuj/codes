@@ -1,0 +1,42 @@
+//stl application idea 1.5
+No. of subsequences of an array of size N is - ((2^N)-1)
+No. of subarrays of an array of size N is- N(N+1)/2 
+min_element() function returns iterator to min value of a range, and it is of order O(n).
+
+//stl application idea 2:
+Lower bound(x) - 1) iterator to the first element >=x  // auto it = lower_bound (v.begin(), v.end())
+                 2) Number of elements < x            // No. of elements= it-v.begin()
+
+Upper bound(x) - 1) iterator to the first element > x
+                 2) Number of elements <= x
+
+both of these function can be used on 'sorted' array, and have time complexity of O(log N)
+
+ [2,3,4,5] - here iterators :- 
+ 1) v.begin() point to 2.
+ 2) v.end() points to one step ahead of 5 (4th index)
+ 3) v.rend() points to one before of 2 (-1 index)
+ 4) v.rbegin points to 5.
+
+// stl applicationidea 3
+Never pass = in the compartor function otherwise it will give TLE. Infinite swapping like thing happens.
+Sort works in O(N log N)
+
+Question 2)
+We need to find the number of subarray who have sum of x.
+    (Summation i=L -> R) arr[i]=x
+    Then increase the no. of subarray.
+    This can be done with the help of prefix sum...
+    So, The question changes to :
+        Find the number of (L,R) pairs form prefix sum array which have:
+            1) L<=R
+            2) P[R]- P[L-1]== X
+
+//STL application 4.5
+    Priority Queue:
+        Insert- O(log N)
+        Pop- O(Log N)
+        Top/Max - O(1)
+    
+Number of windows of length x in an array of size N = (N-X+1).    
+    

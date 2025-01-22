@@ -1,0 +1,39 @@
+(a+b) mod c= (a mod c +b mod c) mod c 
+
+(a-b) mod c = (a mod c - b mod c) mod c
+
+(a*b) mod c = (a mod c * b mod c) mod c
+
+(a^b) mod c = ((a mod c)^b) mod c
+
+if a=b mod c(a and b are congruent) then a= b+ k.c ,, a and b are congruent when we add some no. k to it , where k is some number
+
+//generally in these return final ans as (ans%mod+mod)%mod so that it handles negative values.
+
+//gcd , generally assumed a>=b
+int gcd(int a, int b){
+    if(b==0||a==0) return a^b;
+    return gcd(b,a%b);
+}
+
+
+//inverse a.b^-1
+
+int inverse(int x){
+    return binpow(x,mod-2)
+}
+
+//ciel a/b = floor (a+b-1)/b
+
+// a|b => "a divides b" <=> "b is divisible by a" <=> b % a = 0
+
+
+
+// for numbers in range [l,r] -> 
+    number of even numbers is : r/2 - ciel(l/2)+1
+    number of odd numbers is : r+1/2 - l/2
+
+Number of subsequences in string of length x-> 2^x
+
+
+// {Y-(Y % X)}-> gives the greatest multiple of X which is less than or equals to Y

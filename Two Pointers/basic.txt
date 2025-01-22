@@ -1,0 +1,15 @@
+N,k         //maximum length of subarray having k 0's
+arr[n]- 1,0,1,1,0,0,---------
+ head=-1, tail =0    //starting condition
+
+L<L'   =>2 pointers can be applied
+R<=R'
+
+while(tail<n){
+
+    1)move head as far as possible   O(H) -checking and head++ only
+    2) process the current window    O(A) - finding and updating the answer
+    3) tail++, update accordingly    O(T)
+}
+Time complexity = O(N*(H+A+T))
+    
